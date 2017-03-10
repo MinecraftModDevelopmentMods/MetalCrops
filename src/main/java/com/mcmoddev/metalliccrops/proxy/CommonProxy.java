@@ -1,4 +1,4 @@
-package com.mcmoddev.basecrops.proxy;
+package com.mcmoddev.metalliccrops.proxy;
 
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import java.util.*;
@@ -10,11 +10,11 @@ import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.MissingModsException;
 import net.minecraftforge.fml.common.versioning.ArtifactVersion;
 import net.minecraftforge.fml.common.versioning.DefaultArtifactVersion;
-import com.mcmoddev.basecrops.BaseCrops;
-import com.mcmoddev.basecrops.init.Blocks;
-import com.mcmoddev.basecrops.init.Items;
-import com.mcmoddev.basecrops.init.Recipes;
-import com.mcmoddev.basecrops.lib.DataConstants;
+import com.mcmoddev.metalliccrops.MetallicCrops;
+import com.mcmoddev.metalliccrops.init.Blocks;
+import com.mcmoddev.metalliccrops.init.Items;
+import com.mcmoddev.metalliccrops.init.Recipes;
+import com.mcmoddev.metalliccrops.lib.DataConstants;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLInterModComms;
@@ -33,7 +33,7 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent e) {
     	config = new Configuration(e.getSuggestedConfigurationFile());
 
-		FMLInterModComms.sendFunctionMessage("orespawn", "api", "com.mcmoddev.orespawn.BaseCropsOreSpawn");
+		FMLInterModComms.sendFunctionMessage("orespawn", "api", "com.mcmoddev.orespawn.MetallicCropsOreSpawn");
 
     	Blocks.initBlocks();
     	Items.initItems();
@@ -45,7 +45,7 @@ public class CommonProxy {
 			orespawnMod.add(new DefaultArtifactVersion("1.1.0"));
 			throw new MissingModsException(orespawnMod, "orespawn", "MMD Ore Spawn Mod");
 		}
-		final Path oreSpawnFile = Paths.get(ORESPAWN_CFG_PATH, BaseCrops.MODID + ".json");
+		final Path oreSpawnFile = Paths.get(ORESPAWN_CFG_PATH, MetallicCrops.MODID + ".json");
 		if (!(oreSpawnFile.toFile().exists())) {
 			try {
 				Files.createDirectories(oreSpawnFile.getParent());

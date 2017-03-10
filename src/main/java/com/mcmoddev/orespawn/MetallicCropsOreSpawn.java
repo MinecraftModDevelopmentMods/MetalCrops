@@ -1,12 +1,12 @@
 package com.mcmoddev.orespawn;
 
 import com.google.common.base.Function;
-import com.mcmoddev.basecrops.init.Blocks;
+import com.mcmoddev.metalliccrops.init.Blocks;
 
 import mmd.orespawn.api.OreSpawnAPI;
 import mmd.orespawn.api.SpawnLogic;
 
-public class BaseCropsOreSpawn implements Function<OreSpawnAPI, SpawnLogic> {
+public class MetallicCropsOreSpawn implements Function<OreSpawnAPI, SpawnLogic> {
 
 	@Override
 	public SpawnLogic apply(OreSpawnAPI api) {

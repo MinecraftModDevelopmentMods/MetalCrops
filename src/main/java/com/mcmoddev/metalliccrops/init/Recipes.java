@@ -1,4 +1,4 @@
-package com.mcmoddev.basecrops.init;
+package com.mcmoddev.metalliccrops.init;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

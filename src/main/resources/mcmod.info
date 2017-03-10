@@ -1,8 +1,8 @@
 [
 {
-  "modid": "basecrops",
-  "name": "Base Crops",
-  "description": "Base Crops",
+  "modid": "metalliccrops",
+  "name": "Metallic Crops",
+  "description": "Metallic Crops",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",

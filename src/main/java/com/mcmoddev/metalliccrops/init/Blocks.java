@@ -1,9 +1,9 @@
-package com.mcmoddev.basecrops.init;
+package com.mcmoddev.metalliccrops.init;
 
 
-import com.mcmoddev.basecrops.lib.BlockMetalCrop;
-import com.mcmoddev.basecrops.lib.BlockMetalCrop2;
-import com.mcmoddev.basecrops.lib.BlockMetalicFarmland2;
+import com.mcmoddev.metalliccrops.lib.BlockMetalCrop;
+import com.mcmoddev.metalliccrops.lib.BlockMetalCrop2;
+import com.mcmoddev.metalliccrops.lib.BlockMetalicFarmland2;
 
 import net.minecraft.block.Block;
 import net.minecraftforge.fml.common.Loader;

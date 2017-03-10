@@ -1,6 +1,6 @@
-package com.mcmoddev.basecrops.lib;
+package com.mcmoddev.metalliccrops.lib;
 
-import com.mcmoddev.basecrops.init.Blocks;
+import com.mcmoddev.metalliccrops.init.Blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;

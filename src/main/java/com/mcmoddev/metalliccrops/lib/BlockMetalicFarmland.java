@@ -1,12 +1,12 @@
-package com.mcmoddev.basecrops.lib;
+package com.mcmoddev.metalliccrops.lib;
 
 
 import java.util.Random;
 
 import javax.annotation.Nullable;
 
-import com.mcmoddev.basecrops.BaseCrops;
-import com.mcmoddev.basecrops.init.Blocks;
+import com.mcmoddev.metalliccrops.MetallicCrops;
+import com.mcmoddev.metalliccrops.init.Blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDirt;
@@ -34,7 +34,7 @@ public class BlockMetalicFarmland extends BlockFarmland {
 
 	public BlockMetalicFarmland(String regname) {
 		super();
-		setUnlocalizedName(BaseCrops.MODID + "." + regname);
+		setUnlocalizedName(MetallicCrops.MODID + "." + regname);
 		setRegistryName(regname);
 		GameRegistry.register(this);
 		GameRegistry.register(new ItemBlock(this), getRegistryName());	

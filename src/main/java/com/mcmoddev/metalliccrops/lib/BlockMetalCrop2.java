@@ -1,4 +1,4 @@
-package com.mcmoddev.basecrops.lib;
+package com.mcmoddev.metalliccrops.lib;
 
 import net.minecraft.block.BlockCrops;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -8,7 +8,7 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import com.mcmoddev.basecrops.BaseCrops;
+import com.mcmoddev.metalliccrops.MetallicCrops;
 
 public class BlockMetalCrop2 extends BlockCrops{
 	public String crop;
@@ -16,7 +16,7 @@ public class BlockMetalCrop2 extends BlockCrops{
 
 	
 	public BlockMetalCrop2(String regname, String cropname, String seedname) {
-		setUnlocalizedName(BaseCrops.MODID + "." + regname);
+		setUnlocalizedName(MetallicCrops.MODID + "." + regname);
 		setRegistryName(regname);
 		GameRegistry.register(this);
 		GameRegistry.register(new ItemBlock(this), getRegistryName());
@@ -26,11 +26,11 @@ public class BlockMetalCrop2 extends BlockCrops{
 	
 	@Override
 	protected Item getSeed() {
-		return Item.getByNameOrId("basecrops:" + seed);
+		return Item.getByNameOrId("metalliccrops:" + seed);
 	}
 	@Override
 	protected Item getCrop() {
-		return Item.getByNameOrId("basecrops:" + crop);
+		return Item.getByNameOrId("metalliccrops:" + crop);
 	}
 
 	@SideOnly(Side.CLIENT)

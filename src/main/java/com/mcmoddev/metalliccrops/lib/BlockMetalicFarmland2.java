@@ -1,7 +1,7 @@
-package com.mcmoddev.basecrops.lib;
+package com.mcmoddev.metalliccrops.lib;
 
 
-import com.mcmoddev.basecrops.BaseCrops;
+import com.mcmoddev.metalliccrops.MetallicCrops;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -14,7 +14,7 @@ import net.minecraft.world.IBlockAccess;
 
 	    public BlockMetalicFarmland2(String unlocalizedName, Material material, float hardness, float resistance) {
 	        super(material);
-	        this.setUnlocalizedName(BaseCrops.MODID + "." + unlocalizedName);
+	        this.setUnlocalizedName(MetallicCrops.MODID + "." + unlocalizedName);
 	        this.setHardness(hardness);
 	        this.setResistance(resistance);
 	    }

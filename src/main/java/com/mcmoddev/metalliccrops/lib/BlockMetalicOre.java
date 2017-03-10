@@ -1,4 +1,4 @@
-package com.mcmoddev.basecrops.lib;
+package com.mcmoddev.metalliccrops.lib;
 
 
 import java.util.Random;

@@ -1,24 +1,24 @@
-package com.mcmoddev.basecrops;
+package com.mcmoddev.metalliccrops;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import com.mcmoddev.basecrops.proxy.CommonProxy;
+import com.mcmoddev.metalliccrops.proxy.CommonProxy;
 
-@Mod(modid = BaseCrops.MODID, name = BaseCrops.MODNAME, version = BaseCrops.VERSION, dependencies = "after:basemetals" )
-public class BaseCrops
+@Mod(modid = MetallicCrops.MODID, name = MetallicCrops.MODNAME, version = MetallicCrops.VERSION, dependencies = "after:basemetals" )
+public class MetallicCrops
 {
-    public static final String MODID = "basecrops";
-    public static final String MODNAME = "Base Crops";
-    public static final String VERSION = "1.0";
+    public static final String MODID = "metalliccrops";
+    public static final String MODNAME = "Metallic Crops";
+    public static final String VERSION = "1.0.1";
     
-    @SidedProxy(clientSide = "com.mcmoddev.basecrops.proxy.ClientProxy", serverSide = "com.mcmoddev.basecrops.proxy.CommonProxy")
+    @SidedProxy(clientSide = "com.mcmoddev.metalliccrops.proxy.ClientProxy", serverSide = "com.mcmoddev.metalliccrops.proxy.CommonProxy")
     public static CommonProxy proxy;
     
     @Mod.Instance
-    public static BaseCrops instance;
+    public static MetallicCrops instance;
     
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)

@@ -1,14 +1,14 @@
-package com.mcmoddev.basecrops.init;
+package com.mcmoddev.metalliccrops.init;
 
 
 
-import com.mcmoddev.basecrops.BaseCrops;
-import com.mcmoddev.basecrops.lib.BlockMetalCrop;
-import com.mcmoddev.basecrops.lib.BlockMetalCrop2;
-import com.mcmoddev.basecrops.lib.ItemMetalHoe;
-import com.mcmoddev.basecrops.lib.ItemMetalSeeds;
-import com.mcmoddev.basecrops.lib.ItemMetalSeeds2;
-import com.mcmoddev.basecrops.lib.ItemMetalic;
+import com.mcmoddev.metalliccrops.MetallicCrops;
+import com.mcmoddev.metalliccrops.lib.BlockMetalCrop;
+import com.mcmoddev.metalliccrops.lib.BlockMetalCrop2;
+import com.mcmoddev.metalliccrops.lib.ItemMetalHoe;
+import com.mcmoddev.metalliccrops.lib.ItemMetalSeeds;
+import com.mcmoddev.metalliccrops.lib.ItemMetalSeeds2;
+import com.mcmoddev.metalliccrops.lib.ItemMetalic;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -152,13 +152,13 @@ public class Items {
 	public static Item registerItemsMetalic(String name) {
 		ItemMetalic item = new ItemMetalic (name);
 		item.setRegistryName(name);
-		item.setUnlocalizedName(BaseCrops.MODID + "." + name);
+		item.setUnlocalizedName(MetallicCrops.MODID + "." + name);
 		return GameRegistry.register(item);
 	}
 	public static Item registerItems(String name, ToolMaterial material) {
 		ItemMetalHoe item = new ItemMetalHoe (material, name);
 		item.setRegistryName(name);
-		item.setUnlocalizedName(BaseCrops.MODID + "." + name);
+		item.setUnlocalizedName(MetallicCrops.MODID + "." + name);
 		return GameRegistry.register(item);
 	}
 	
@@ -166,7 +166,7 @@ public class Items {
 		ItemMetalSeeds item = new ItemMetalSeeds (crop, name, soil);
 		seedsMap.put((BlockMetalCrop) crop, item);
 		item.setRegistryName(name);
-		item.setUnlocalizedName(BaseCrops.MODID + "." + name);
+		item.setUnlocalizedName(MetallicCrops.MODID + "." + name);
 		return GameRegistry.register(item);
 		
 	}
@@ -174,7 +174,7 @@ public class Items {
 		ItemMetalSeeds2 item = new ItemMetalSeeds2 (crop, name, soil);
 		seedsMap2.put((BlockMetalCrop2) crop, item);
 		item.setRegistryName(name);
-		item.setUnlocalizedName(BaseCrops.MODID + "." + name);
+		item.setUnlocalizedName(MetallicCrops.MODID + "." + name);
 		return GameRegistry.register(item);
 		
 	}

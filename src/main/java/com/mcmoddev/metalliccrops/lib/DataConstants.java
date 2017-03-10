@@ -1,4 +1,4 @@
-package com.mcmoddev.basecrops.lib;
+package com.mcmoddev.metalliccrops.lib;
 
 public abstract class DataConstants {
 

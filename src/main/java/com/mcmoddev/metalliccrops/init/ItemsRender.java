@@ -1,4 +1,4 @@
-package com.mcmoddev.basecrops.init;
+package com.mcmoddev.metalliccrops.init;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;

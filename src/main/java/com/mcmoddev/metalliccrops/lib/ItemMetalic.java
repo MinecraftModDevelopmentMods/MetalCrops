@@ -1,4 +1,4 @@
-package com.mcmoddev.basecrops.lib;
+package com.mcmoddev.metalliccrops.lib;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;

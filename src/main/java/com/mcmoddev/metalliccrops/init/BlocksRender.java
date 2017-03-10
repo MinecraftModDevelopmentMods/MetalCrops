@@ -1,4 +1,4 @@
-package com.mcmoddev.basecrops.init;
+package com.mcmoddev.metalliccrops.init;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
