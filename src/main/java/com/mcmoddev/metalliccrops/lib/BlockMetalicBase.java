@@ -10,18 +10,18 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-	public class BlockMetalicFarmland2 extends Block {
+	public class BlockMetalicBase extends Block {
 
-	    public BlockMetalicFarmland2(String unlocalizedName, Material material, float hardness, float resistance) {
+	    public BlockMetalicBase(String unlocalizedName, Material material, float hardness, float resistance) {
 	        super(material);
 	        this.setUnlocalizedName(MetallicCrops.MODID + "." + unlocalizedName);
 	        this.setHardness(hardness);
 	        this.setResistance(resistance);
 	    }
-	    public BlockMetalicFarmland2(String unlocalizedName, float hardness, float resistance) {
+	    public BlockMetalicBase(String unlocalizedName, float hardness, float resistance) {
 	        this(unlocalizedName, Material.ROCK, hardness, resistance);
 	    }
-	    public BlockMetalicFarmland2(String unlocalizedName) {
+	    public BlockMetalicBase(String unlocalizedName) {
 	        this(unlocalizedName, 2.0f, 10.0f);
 	    }
 	    

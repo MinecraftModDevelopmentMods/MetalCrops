@@ -94,18 +94,5 @@ public class Recipes {
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.starsteelSmallPowder, 9),new ItemStack(Item.getByNameOrId("basemetals:starsteel_ingot"), 1));
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.tinSmallPowder, 9),new ItemStack(Item.getByNameOrId("basemetals:tin_ingot"), 1));
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.zincSmallPowder, 9),new ItemStack(Item.getByNameOrId("basemetals:zinc_ingot"), 1));
-/**
-		GameRegistry.addShapelessRecipe(new ItemStack(Item.getByNameOrId("basemetals:adamantine_ingot"), 1),new ItemStack(Items.adamantineSmallPowder, 9));
-		GameRegistry.addShapelessRecipe(new ItemStack(Item.getByNameOrId("basemetals:aquarium_ingot"), 1),new ItemStack(Items.aquariumSmallPowder, 9));
-		GameRegistry.addShapelessRecipe(new ItemStack(Item.getByNameOrId("basemetals:copper_ingot"), 1),new ItemStack(Items.copperSmallPowder, 9));
-		GameRegistry.addShapelessRecipe(new ItemStack(Item.getByNameOrId("basemetals:coldiron_ingot"), 1),new ItemStack(Items.coldironSmallPowder, 9));
-		GameRegistry.addShapelessRecipe(new ItemStack(Item.getByNameOrId("basemetals:lead_ingot"), 1),new ItemStack(Items.leadSmallPowder, 9));
-		GameRegistry.addShapelessRecipe(new ItemStack(Item.getByNameOrId("basemetals:nickel_ingot"), 1),new ItemStack(Items.nickelSmallPowder, 9));
-		GameRegistry.addShapelessRecipe(new ItemStack(Item.getByNameOrId("basemetals:mercury_ingot"), 1),new ItemStack(Items.mercurySmallPowder, 9));
-		GameRegistry.addShapelessRecipe(new ItemStack(Item.getByNameOrId("basemetals:starsteel_ingot"), 1),new ItemStack(Items.starsteelSmallPowder, 9));
-		GameRegistry.addShapelessRecipe(new ItemStack(Item.getByNameOrId("basemetals:tin_ingot"), 1),new ItemStack(Items.tinSmallPowder, 9));
-		GameRegistry.addShapelessRecipe(new ItemStack(Item.getByNameOrId("basemetals:zinc_ingot"), 1),new ItemStack(Items.zincSmallPowder, 9));
-	**/
-	
 	}
 }

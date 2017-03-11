@@ -12,9 +12,7 @@ public class ItemsRender {
 		reg(Items.metallicIngot);
 		reg(Items.metallicSmallPowder);
 		reg(Items.metallicPowder);
-
 		reg(Items.metallicHoe);
-		
 		reg(Items.adamantineSmallPowder);
 		reg(Items.aquariumSmallPowder);
 		reg(Items.copperSmallPowder);
@@ -39,7 +37,6 @@ public class ItemsRender {
 		reg(Items.diamondSeeds);
 		reg(Items.redstoneSeeds);
 		reg(Items.emeraldSeeds);
-
 		reg(Items.goldPowder);
 		reg(Items.ironPowder);
 		reg(Items.coalPowder);
@@ -62,15 +59,7 @@ public class ItemsRender {
 			reg(Items.starsteelSeeds);
 			reg(Items.tinSeeds);
 			reg(Items.zincSeeds);
-			/**
-			reg(Items.vanilla_charcoalSeeds);
-			reg(Items.vanilla_coalSeeds);
-			reg(Items.vanilla_diamondSeeds);
-			reg(Items.vanilla_goldSeeds);
-			reg(Items.vanilla_ironSeeds);
-			reg(Items.vanilla_redstoneSeeds);
 
-**/
 }
 		public static void reg(Item item) {
 			ModelResourceLocation res = new ModelResourceLocation(item.getRegistryName().toString(), "inventory");

@@ -2,21 +2,15 @@ package com.mcmoddev.metalliccrops.init;
 
 
 import com.mcmoddev.metalliccrops.lib.BlockMetalCrop;
-import com.mcmoddev.metalliccrops.lib.BlockMetalCrop2;
-import com.mcmoddev.metalliccrops.lib.BlockMetalicFarmland2;
-
+import com.mcmoddev.metalliccrops.lib.BlockMetalicBase;
 import net.minecraft.block.Block;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-
 import net.minecraftforge.fml.common.Optional;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-
 public class Blocks {
-
-    //BMe Tier 1
 	public static BlockMetalCrop adamantineCrop;
 	public static BlockMetalCrop antimonyCrop;
 	public static BlockMetalCrop aquariumCrop;
@@ -29,16 +23,12 @@ public class Blocks {
 	public static BlockMetalCrop starsteelCrop;
 	public static BlockMetalCrop tinCrop;
 	public static BlockMetalCrop zincCrop;
-
-	//BMe Vanilla
 	public static BlockMetalCrop vanilla_charcoalCrop;
 	public static BlockMetalCrop vanilla_coalCrop;	
 	public static BlockMetalCrop vanilla_diamondCrop;
 	public static BlockMetalCrop vanilla_goldCrop;
 	public static BlockMetalCrop vanilla_ironCrop;	
 	public static BlockMetalCrop vanilla_redstoneCrop;
-
-    //BMe Tier 2 (To do)
 	public static BlockMetalCrop brassCrop;
 	public static BlockMetalCrop bronzeCrop;
 	public static BlockMetalCrop cupronickelCrop;
@@ -49,46 +39,33 @@ public class Blocks {
 	public static BlockMetalCrop platinumCrop;
 	public static BlockMetalCrop silverCrop;
 	public static BlockMetalCrop steelCrop;
-
-
 	public static Block metallicFarmland;
 	public static Block metallicOre;
-	public static BlockMetalCrop2 metallicCrop;
-	
-	public static BlockMetalCrop2 goldCrop;
-	public static BlockMetalCrop2 ironCrop;
-	public static BlockMetalCrop2 coalCrop;
-	public static BlockMetalCrop2 lapisCrop;
-	public static BlockMetalCrop2 diamondCrop;
-	public static BlockMetalCrop2 redstoneCrop;
-	public static BlockMetalCrop2 emeraldCrop;
-
-
-
-    // To do
-	public static BlockMetalCrop modernmetalsCrop;
-	public static BlockMetalCrop utilitybaseoresCrop;
+	public static BlockMetalCrop metallicCrop;
+	public static BlockMetalCrop goldCrop;
+	public static BlockMetalCrop ironCrop;
+	public static BlockMetalCrop coalCrop;
+	public static BlockMetalCrop lapisCrop;
+	public static BlockMetalCrop diamondCrop;
+	public static BlockMetalCrop redstoneCrop;
+	public static BlockMetalCrop emeraldCrop;
 
 	public static void initBlocks() {
 		
-	    GameRegistry.registerBlock(metallicFarmland = new BlockMetalicFarmland2("metallic_farmland").setLightLevel(1.0f), "metallic_farmland");
-	    GameRegistry.registerBlock(metallicOre = new BlockMetalicFarmland2("metallic_ore").setLightLevel(1.0f), "metallic_ore");
-	    metallicCrop = new BlockMetalCrop2("metallic_crop", "metallic_smallpowder", "metallic_seeds");
-	    
-	    goldCrop = new BlockMetalCrop2("gold_crop", "gold_smallpowder", "gold_seeds");
-	    ironCrop = new BlockMetalCrop2("iron_crop", "iron_smallpowder", "iron_seeds");
-	    coalCrop = new BlockMetalCrop2("coal_crop", "coal_smallpowder", "coal_seeds");
-	    lapisCrop = new BlockMetalCrop2("lapis_crop", "lapis_smallpowder", "lapis_seeds");
-	    diamondCrop = new BlockMetalCrop2("diamond_crop", "diamond_smallpowder", "diamon_seeds");
-	    redstoneCrop = new BlockMetalCrop2("redstone_crop", "redstone_smallpowder", "redstone_seeds");
-	    emeraldCrop = new BlockMetalCrop2("emerald_crop", "emerald_smallpowder", "emerald_seeds");
-
-
+	    GameRegistry.registerBlock(metallicFarmland = new BlockMetalicBase("metallic_farmland").setLightLevel(1.0f), "metallic_farmland");
+	    GameRegistry.registerBlock(metallicOre = new BlockMetalicBase("metallic_ore").setLightLevel(1.0f), "metallic_ore");
+	    metallicCrop = new BlockMetalCrop("metallic_crop", "metallic_smallpowder", "metallic_seeds");
+	    goldCrop = new BlockMetalCrop("gold_crop", "gold_smallpowder", "gold_seeds");
+	    ironCrop = new BlockMetalCrop("iron_crop", "iron_smallpowder", "iron_seeds");
+	    coalCrop = new BlockMetalCrop("coal_crop", "coal_smallpowder", "coal_seeds");
+	    lapisCrop = new BlockMetalCrop("lapis_crop", "lapis_smallpowder", "lapis_seeds");
+	    diamondCrop = new BlockMetalCrop("diamond_crop", "diamond_smallpowder", "diamon_seeds");
+	    redstoneCrop = new BlockMetalCrop("redstone_crop", "redstone_smallpowder", "redstone_seeds");
+	    emeraldCrop = new BlockMetalCrop("emerald_crop", "emerald_smallpowder", "emerald_seeds");
 	}
 	
 	@Optional.Method(modid="basemetals")
 	public static void initBMe() {
-
 		//antimonyCrop = new BlockMetalCrop("antimony_crop", "antimony_powder", "antimony_seeds");
 		adamantineCrop = new BlockMetalCrop("adamantine_crop", "adamantine_smallpowder", "adamantine_seeds");
 		aquariumCrop = new BlockMetalCrop("aquarium_crop", "aquarium_smallpowder", "aquarium_seeds");
@@ -101,43 +78,10 @@ public class Blocks {
 		starsteelCrop = new BlockMetalCrop("starsteel_crop", "starsteel_smallpowder", "starsteel_seeds");
 		tinCrop = new BlockMetalCrop("tin_crop", "tin_smallpowder", "tin_seeds");
 		zincCrop = new BlockMetalCrop("zinc_crop", "zinc_smallpowder", "zinc_seeds");
-		
-		/**
-		vanilla_charcoalCrop = new BlockMetalCrop("vanilla_charcoal_crop", "vanilla_charcoal_smallpowder", "vanilla_charcoal_seeds");
-		vanilla_coalCrop = new BlockMetalCrop("vanilla_coal_crop", "vanilla_coal_smallpowder", "vanilla_coal_seeds");
-		vanilla_diamondCrop = new BlockMetalCrop("vanilla_diamond_crop", "vanilla_diamond_smallpowder", "vanilla_diamond_seeds");
-		vanilla_goldCrop = new BlockMetalCrop("vanilla_gold_crop", "vanilla_gold_smallpowder", "vanilla_gold_seeds");
-		vanilla_ironCrop = new BlockMetalCrop("vanilla_iron_crop", "vanilla_iron_smallpowder", "vanilla_iron_seeds");
-		vanilla_redstoneCrop = new BlockMetalCrop("vanilla_redstone_crop", "vanilla_redstone_smallpowder", "vanilla_redstone_seeds");
-**/
 		}
-	/**
-	@Optional.Method(modid="baseminerals")
-	public static void initBMe2() {
-		basemineralsCrop = new BlockMetalCrop("baseminerals_crop", "baseminerals_powder", "baseminerals_seed");
-	    }
 	
-	@Optional.Method(modid="fantasymetals")
-		public static void initFMe() {
-		copperCrop = new BlockMetalCrop("copper_crop", "copper_powder", "copper_seed");
-	//
-	}	
-	
-	@Optional.Method(modid="modernmetals")
-	public static void initMMe() {
-		modernmetalsCrop = new BlockMetalCrop("modernmetals_crop", "modernmetals_powder", "modernmetals_seed");
-	//
-	}
-	
-	@Optional.Method(modid="utilitybaseores")
-	public static void initUBOe() {
-		utilitybaseoresCrop = new BlockMetalCrop("utilitybaseores_crop", "utilitybaseores_powder", "utilitybaseores_seed");
-//	
-	}
-**/
 	@SideOnly(Side.CLIENT)
 	public static void initModels(){
-		
 		metallicCrop.initModel();
 		goldCrop.initModel();
 		ironCrop.initModel();
@@ -146,7 +90,6 @@ public class Blocks {
 		diamondCrop.initModel();
 		redstoneCrop.initModel();
 		emeraldCrop.initModel();
-
 		}	
 	@SideOnly(Side.CLIENT)
 	public static void initModelsBMe(){
@@ -164,35 +107,8 @@ public class Blocks {
 		starsteelCrop.initModel();
 		tinCrop.initModel();
 		zincCrop.initModel();
-		/**
-		vanilla_charcoalCrop.initModel();
-		vanilla_coalCrop.initModel();
-		vanilla_diamondCrop.initModel();
-		vanilla_goldCrop.initModel();
-		vanilla_ironCrop.initModel();
-		vanilla_redstoneCrop.initModel();
-		**/
-		
+
 		}
-	
-//
 		}
-		
-		/**
-		if (Loader.isModLoaded("modernmetals"))
-		{
-		modernmetalsCrop.initModel();
-//
-		}
-		if (Loader.isModLoaded("utilitybaseores"))
-		{
-		utilitybaseoresCrop.initModel();
-//
-		}
-		
-**/
-		
-	
-	
-	
+
 }

@@ -15,12 +15,12 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class ItemMetalSeeds extends ItemSeeds {
+public class ItemModMetalSeeds extends ItemSeeds {
 	
 	
 	private final Block crops;
 
-	public ItemMetalSeeds(Block crops, String name, Block soil) {
+	public ItemModMetalSeeds(Block crops, String name, Block soil) {
 		super(crops, soil);
 		setUnlocalizedName(name);
         this.setCreativeTab(CreativeTabs.MATERIALS);
