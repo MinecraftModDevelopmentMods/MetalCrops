@@ -1,3 +1,4 @@
+/**
 package com.mcmoddev.orespawn;
 
 import com.google.common.base.Function;
@@ -19,3 +20,4 @@ public class MetallicCropsOreSpawn implements Function<OreSpawnAPI, SpawnLogic> 
 		return logic;
 	}
 }
+**/

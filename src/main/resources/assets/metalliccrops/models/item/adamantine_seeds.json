@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "basecrops:items/adamantine_seeds"
+    "layer0": "metalliccrops:items/adamantine_seeds"
   }
 }

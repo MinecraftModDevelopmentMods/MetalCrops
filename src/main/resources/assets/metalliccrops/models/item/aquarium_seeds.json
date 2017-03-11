@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "basecrops:items/aquarium_seeds"
+    "layer0": "metalliccrops:items/aquarium_seeds"
   }
 }

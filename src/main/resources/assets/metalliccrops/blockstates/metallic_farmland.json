@@ -1,5 +1,5 @@
 {
     "variants": {
-        "normal": { "model": "basecrops:metallic_farmland" }
+        "normal": { "model": "metalliccrops:metallic_farmland" }
     }
 }

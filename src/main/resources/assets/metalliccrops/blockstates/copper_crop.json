@@ -7,32 +7,32 @@
 		"age": {
 			"0": {
 				"textures": {
-					"cross": "basecrops:blocks/copper_crop/0"
+					"cross": "metalliccrops:blocks/copper_crop/0"
 				}
 			},
 			"1": {
 				"textures": {
-					"cross": "basecrops:blocks/copper_crop/1"
+					"cross": "metalliccrops:blocks/copper_crop/1"
 				}
 			},
 			"2": {
 				"textures": {
-					"cross": "basecrops:blocks/copper_crop/2"
+					"cross": "metalliccrops:blocks/copper_crop/2"
 				}
 			},
 			"3": {
 				"textures": {
-					"cross": "basecrops:blocks/copper_crop/3"
+					"cross": "metalliccrops:blocks/copper_crop/3"
 				}
 			},
 			"4": {
 				"textures": {
-					"cross": "basecrops:blocks/copper_crop/4"
+					"cross": "metalliccrops:blocks/copper_crop/4"
 				}
 			},
 			"5": {
 				"textures": {
-					"cross": "basecrops:blocks/copper_crop/5"
+					"cross": "metalliccrops:blocks/copper_crop/5"
 				}
 			},
 			"6": {

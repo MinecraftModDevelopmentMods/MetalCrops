@@ -1,5 +1,5 @@
 {
-    "parent":"basecrops:block/metallic_farmland",
+    "parent":"metalliccrops:block/metallic_farmland",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],

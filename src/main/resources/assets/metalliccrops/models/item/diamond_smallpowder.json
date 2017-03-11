@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "basecrops:items/diamond_smallpowder"
+    "layer0": "metalliccrops:items/diamond_smallpowder"
   }
 }

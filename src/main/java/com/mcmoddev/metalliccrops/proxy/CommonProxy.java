@@ -1,45 +1,36 @@
 package com.mcmoddev.metalliccrops.proxy;
 
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import java.util.*;
-import java.io.*;
-import java.nio.charset.Charset;
-import java.nio.file.*;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.Loader;
-import net.minecraftforge.fml.common.MissingModsException;
-import net.minecraftforge.fml.common.versioning.ArtifactVersion;
-import net.minecraftforge.fml.common.versioning.DefaultArtifactVersion;
-import com.mcmoddev.metalliccrops.MetallicCrops;
 import com.mcmoddev.metalliccrops.init.Blocks;
 import com.mcmoddev.metalliccrops.init.Items;
 import com.mcmoddev.metalliccrops.init.Recipes;
-import com.mcmoddev.metalliccrops.lib.DataConstants;
+import com.mcmoddev.metalliccrops.lib.WorldGen;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLInterModComms;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 
 
 public class CommonProxy {
-	
-	
-	
-	
-	private static final String ORESPAWN_CFG_PATH = "config/orespawn";
 
-	
+	//private static final String ORESPAWN_CFG_PATH = "config/orespawn";
 	public static Configuration config;
     public void preInit(FMLPreInitializationEvent e) {
     	config = new Configuration(e.getSuggestedConfigurationFile());
-
-		FMLInterModComms.sendFunctionMessage("orespawn", "api", "com.mcmoddev.orespawn.MetallicCropsOreSpawn");
-
+		//FMLInterModComms.sendFunctionMessage("orespawn", "api", "com.mcmoddev.orespawn.MetallicCropsOreSpawn");
     	Blocks.initBlocks();
     	Items.initItems();
         Recipes.initRecipes();
+		GameRegistry.registerWorldGenerator(new WorldGen(), 0);
+
 		if (Loader.isModLoaded("basemetals")){Blocks.initBMe(); Items.initBMe(); Recipes.initBMe();
 		}
+    }
+		
+		/**
 		if (!Loader.isModLoaded("orespawn")) {
 			final HashSet<ArtifactVersion> orespawnMod = new HashSet<>();
 			orespawnMod.add(new DefaultArtifactVersion("1.1.0"));
@@ -56,7 +47,7 @@ public class CommonProxy {
 		}
 	}
 		
-    
+    **/
     public void init(FMLInitializationEvent e) {
     }
 

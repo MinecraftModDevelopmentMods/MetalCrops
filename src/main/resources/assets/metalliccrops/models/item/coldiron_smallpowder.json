@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "basecrops:items/coldiron_smallpowder"
+    "layer0": "metalliccrops:items/coldiron_smallpowder"
   }
 }

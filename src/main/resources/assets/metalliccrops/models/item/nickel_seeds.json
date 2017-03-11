@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "basecrops:items/nickel_seeds"
+    "layer0": "metalliccrops:items/nickel_seeds"
   }
 }

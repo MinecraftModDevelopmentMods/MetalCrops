@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "basecrops:blocks/gold_crop/7"
+    "layer0": "metalliccrops:blocks/gold_crop/7"
   }
 }

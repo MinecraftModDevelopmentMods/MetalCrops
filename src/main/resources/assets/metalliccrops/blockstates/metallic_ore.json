@@ -1,5 +1,5 @@
 {
     "variants": {
-        "normal": { "model": "basecrops:metallic_ore" }
+        "normal": { "model": "metalliccrops:metallic_ore" }
     }
 }

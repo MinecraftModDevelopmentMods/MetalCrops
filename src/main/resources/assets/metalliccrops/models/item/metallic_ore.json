@@ -1,5 +1,5 @@
 {
-    "parent":"basecrops:block/metallic_ore",
+    "parent":"metalliccrops:block/metallic_ore",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],

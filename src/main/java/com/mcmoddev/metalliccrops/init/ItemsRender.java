@@ -13,16 +13,6 @@ public class ItemsRender {
 		reg(Items.metallicSmallPowder);
 		reg(Items.metallicPowder);
 		reg(Items.metallicHoe);
-		reg(Items.adamantineSmallPowder);
-		reg(Items.aquariumSmallPowder);
-		reg(Items.copperSmallPowder);
-		reg(Items.coldironSmallPowder);
-		reg(Items.leadSmallPowder);
-		reg(Items.nickelSmallPowder);
-		reg(Items.mercurySmallPowder);
-		reg(Items.starsteelSmallPowder);
-		reg(Items.tinSmallPowder);
-		reg(Items.zincSmallPowder);
 		reg(Items.goldSmallPowder);
 		reg(Items.ironSmallPowder);
 		reg(Items.coalSmallPowder);
@@ -59,15 +49,19 @@ public class ItemsRender {
 			reg(Items.starsteelSeeds);
 			reg(Items.tinSeeds);
 			reg(Items.zincSeeds);
-
+			reg(Items.adamantineSmallPowder);
+			reg(Items.aquariumSmallPowder);
+			reg(Items.copperSmallPowder);
+			reg(Items.coldironSmallPowder);
+			reg(Items.leadSmallPowder);
+			reg(Items.nickelSmallPowder);
+			reg(Items.mercurySmallPowder);
+			reg(Items.starsteelSmallPowder);
+			reg(Items.tinSmallPowder);
+			reg(Items.zincSmallPowder);
 }
 		public static void reg(Item item) {
 			ModelResourceLocation res = new ModelResourceLocation(item.getRegistryName().toString(), "inventory");
 			ModelLoader.setCustomModelResourceLocation(item, 0, res);
 		}
 }
-
-
-
-
-
