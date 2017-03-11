@@ -1,9 +1,12 @@
 package com.mcmoddev.metalliccrops.init;
 
 
+import com.mcmoddev.metalliccrops.MetallicCrops;
 import com.mcmoddev.metalliccrops.lib.BlockMetalCrop;
 import com.mcmoddev.metalliccrops.lib.BlockMetalicBase;
 import net.minecraft.block.Block;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -39,8 +42,8 @@ public class Blocks {
 	public static BlockMetalCrop platinumCrop;
 	public static BlockMetalCrop silverCrop;
 	public static BlockMetalCrop steelCrop;
-	public static Block metallicFarmland;
-	public static Block metallicOre;
+	public static BlockMetalicBase metallicFarmland;
+	public static BlockMetalicBase metallicOre;
 	public static BlockMetalCrop metallicCrop;
 	public static BlockMetalCrop goldCrop;
 	public static BlockMetalCrop ironCrop;
@@ -51,9 +54,10 @@ public class Blocks {
 	public static BlockMetalCrop emeraldCrop;
 
 	public static void initBlocks() {
-		
-	    GameRegistry.registerBlock(metallicFarmland = new BlockMetalicBase("metallic_farmland").setLightLevel(1.0f), "metallic_farmland");
-	    GameRegistry.registerBlock(metallicOre = new BlockMetalicBase("metallic_ore").setLightLevel(1.0f), "metallic_ore");
+		metallicFarmland = new BlockMetalicBase("metallic_farmland");
+		metallicOre = new BlockMetalicBase("metallic_ore");
+		registerBlock(metallicFarmland,"metallic_farmland");
+		registerBlock(metallicOre,"metallic_ore");
 	    metallicCrop = new BlockMetalCrop("metallic_crop", "metallic_smallpowder", "metallic_seeds");
 	    goldCrop = new BlockMetalCrop("gold_crop", "gold_smallpowder", "gold_seeds");
 	    ironCrop = new BlockMetalCrop("iron_crop", "iron_smallpowder", "iron_seeds");
@@ -91,6 +95,8 @@ public class Blocks {
 		redstoneCrop.initModel();
 		emeraldCrop.initModel();
 		}	
+
+		
 	@SideOnly(Side.CLIENT)
 	public static void initModelsBMe(){
 		if (Loader.isModLoaded("basemetals"))
@@ -110,5 +116,12 @@ public class Blocks {
 
 		}
 		}
+
+	private static void registerBlock(Block block, String name) {
+
+		GameRegistry.register(block, new ResourceLocation(MetallicCrops.MODID,name));
+		GameRegistry.register(new ItemBlock(block), new ResourceLocation(MetallicCrops.MODID,name));
+
+	}
 
 }
