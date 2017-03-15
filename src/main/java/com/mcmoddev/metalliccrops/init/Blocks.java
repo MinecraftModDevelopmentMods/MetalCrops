@@ -11,6 +11,39 @@ import net.minecraftforge.fml.common.Optional;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class Blocks {
+	
+	// Vanilla and Metallic Crops blocks
+	public static Block metallicFarmland;
+	public static Block metallicOre;
+	public static BlockMetalCrop metallicCrop;
+	public static BlockMetalCrop goldCrop;
+	public static BlockMetalCrop ironCrop;
+	public static BlockMetalCrop coalCrop;
+	public static BlockMetalCrop lapisCrop;
+	public static BlockMetalCrop diamondCrop;
+	public static BlockMetalCrop redstoneCrop;
+	public static BlockMetalCrop emeraldCrop;
+	
+	// Utility Base Ores Compat
+	public static BlockMetalCrop featherCrop;
+	public static BlockMetalCrop boneCrop;
+	public static BlockMetalCrop rottenCrop;
+	public static BlockMetalCrop blazeCrop;
+	public static BlockMetalCrop glowstoneCrop;
+	public static BlockMetalCrop gunpowderCrop;
+	public static BlockMetalCrop prismarineCrop;
+	public static BlockMetalCrop enderCrop;
+	public static BlockMetalCrop magmaCrop;
+	public static BlockMetalCrop slimeCrop;
+	public static BlockMetalCrop flintCrop;
+	public static BlockMetalCrop carrotCrop;
+	public static BlockMetalCrop melonCrop;
+	public static BlockMetalCrop potatoCrop;
+	public static BlockMetalCrop chickenCrop;
+	public static BlockMetalCrop beefCrop;
+	public static BlockMetalCrop porkchopCrop;
+	public static BlockMetalCrop fishCrop;
+    //BMe compat
 	public static BlockMetalCrop adamantineCrop;
 	public static BlockMetalCrop antimonyCrop;
 	public static BlockMetalCrop aquariumCrop;
@@ -23,32 +56,6 @@ public class Blocks {
 	public static BlockMetalCrop starsteelCrop;
 	public static BlockMetalCrop tinCrop;
 	public static BlockMetalCrop zincCrop;
-	public static BlockMetalCrop vanilla_charcoalCrop;
-	public static BlockMetalCrop vanilla_coalCrop;	
-	public static BlockMetalCrop vanilla_diamondCrop;
-	public static BlockMetalCrop vanilla_goldCrop;
-	public static BlockMetalCrop vanilla_ironCrop;	
-	public static BlockMetalCrop vanilla_redstoneCrop;
-	public static BlockMetalCrop brassCrop;
-	public static BlockMetalCrop bronzeCrop;
-	public static BlockMetalCrop cupronickelCrop;
-	public static BlockMetalCrop electrumCrop;
-	public static BlockMetalCrop invarCrop;
-	public static BlockMetalCrop mithrilCrop;
-	public static BlockMetalCrop pewterCrop;
-	public static BlockMetalCrop platinumCrop;
-	public static BlockMetalCrop silverCrop;
-	public static BlockMetalCrop steelCrop;
-	public static Block metallicFarmland;
-	public static Block metallicOre;
-	public static BlockMetalCrop metallicCrop;
-	public static BlockMetalCrop goldCrop;
-	public static BlockMetalCrop ironCrop;
-	public static BlockMetalCrop coalCrop;
-	public static BlockMetalCrop lapisCrop;
-	public static BlockMetalCrop diamondCrop;
-	public static BlockMetalCrop redstoneCrop;
-	public static BlockMetalCrop emeraldCrop;
 
 	public static void initBlocks() {
 		
@@ -79,7 +86,28 @@ public class Blocks {
 		tinCrop = new BlockMetalCrop("tin_crop", "tin_smallpowder", "tin_seeds");
 		zincCrop = new BlockMetalCrop("zinc_crop", "zinc_smallpowder", "zinc_seeds");
 		}
-	
+	@Optional.Method(modid="utilitybaseores")
+	public static void initUBO() {
+		featherCrop = new BlockMetalCrop("feather_crop", "feather_smallpowder", "feather_seeds");
+		boneCrop = new BlockMetalCrop("bone_crop", "bone_smallpowder", "bone_seeds");
+		rottenCrop = new BlockMetalCrop("rotten_crop", "rotten_smallpowder", "rotten_seeds");
+		blazeCrop = new BlockMetalCrop("blaze_crop", "blaze_smallpowder", "blaze_seeds");
+		glowstoneCrop = new BlockMetalCrop("glowstone_crop", "glowstone_smallpowder", "glowstone_seeds");
+		gunpowderCrop = new BlockMetalCrop("gunpowder_crop", "gunpowder_smallpowder", "gunpowder_seeds");
+		prismarineCrop = new BlockMetalCrop("prismarine_crop", "prismarine_smallpowder", "prismarine_seeds");
+		enderCrop = new BlockMetalCrop("ender_crop", "ender_smallpowder", "ender_seeds");
+		magmaCrop = new BlockMetalCrop("magma_crop", "magma_smallpowder", "magma_seeds");
+		slimeCrop = new BlockMetalCrop("slime_crop", "slime_smallpowder", "slime_seeds");
+		flintCrop = new BlockMetalCrop("flint_crop", "flint_smallpowder", "flint_seeds");
+		carrotCrop = new BlockMetalCrop("carrot_crop", "carrot_smallpowder", "carrot_seeds");
+		melonCrop = new BlockMetalCrop("melon_crop", "melon_smallpowder", "melon_seeds");
+		potatoCrop = new BlockMetalCrop("potato_crop", "potato_smallpowder", "potato_seeds");
+		chickenCrop = new BlockMetalCrop("chicken_crop", "chicken_smallpowder", "chicken_seeds");
+		beefCrop = new BlockMetalCrop("beef_crop", "beef_smallpowder", "beef_seeds");
+		porkchopCrop = new BlockMetalCrop("porkchop_crop", "porkchop_smallpowder", "porkchop_seeds");
+		fishCrop = new BlockMetalCrop("fish_crop", "fish_smallpowder", "fish_seeds");
+		}
+
 	@SideOnly(Side.CLIENT)
 	public static void initModels(){
 		metallicCrop.initModel();
@@ -109,6 +137,32 @@ public class Blocks {
 		zincCrop.initModel();
 
 		}
+		
 		}
+	@SideOnly(Side.CLIENT)
+	public static void initModelsUBO(){
+		if (Loader.isModLoaded("utilitybaseores"))
+		{
+			featherCrop.initModel();
+			boneCrop.initModel();
+			rottenCrop.initModel();
+			blazeCrop.initModel();
+			glowstoneCrop.initModel();
+			gunpowderCrop.initModel();
+			prismarineCrop.initModel();
+			enderCrop.initModel();
+			magmaCrop.initModel();
+			slimeCrop.initModel();
+			flintCrop.initModel();
+			carrotCrop.initModel();
+			melonCrop.initModel();
+			potatoCrop.initModel();
+			chickenCrop.initModel();
+			beefCrop.initModel();
+			porkchopCrop.initModel();
+			fishCrop.initModel();
+
+		}
+        }
 
 }
