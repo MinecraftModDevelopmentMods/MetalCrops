@@ -1,0 +1,127 @@
+[
+  {
+    "dimension": 0,
+    "ores": [
+      {
+        "block": "utilitybaseores:feather_ore",
+        "size": 6,
+        "variation": 4,
+        "frequency": 6,
+        "min_height": 0,
+        "max_height": 128
+      },
+      {
+        "block": "utilitybaseores:bone_ore",
+        "size": 6,
+        "variation": 4,
+        "frequency": 6,
+        "min_height": 0,
+        "max_height": 128
+      },
+      {
+        "block": "utilitybaseores:rotten_ore",
+        "size": 8,
+        "variation": 4,
+        "frequency": 8,
+        "min_height": 0,
+        "max_height": 128
+      },
+      {
+        "block": "utilitybaseores:gunpowder_ore",
+        "size": 2,
+        "variation": 4,
+        "frequency": 4,
+        "min_height": 0,
+        "max_height": 10
+      },
+      {
+        "block": "utilitybaseores:prismarine_ore",
+        "size": 2,
+        "variation": 4,
+        "frequency": 4,
+        "min_height": 0,
+        "max_height": 32
+      },
+      {
+        "block": "utilitybaseores:ender_ore",
+        "size": 2,
+        "variation": 4,
+        "frequency": 4,
+        "min_height": 0,
+        "max_height": 32
+      },
+      {
+        "block": "utilitybaseores:slime_ore",
+        "size": 3,
+        "variation": 3,
+        "frequency": 4,
+        "min_height": 0,
+        "max_height": 64
+      },
+      {
+        "block": "utilitybaseores:flint_ore",
+        "size": 6,
+        "variation": 6,
+        "frequency": 6,
+        "min_height": 0,
+        "max_height": 128
+      },
+      {
+        "block": "utilitybaseores:carrot_ore",
+        "size": 6,
+        "variation": 4,
+        "frequency": 4,
+        "min_height": 32,
+        "max_height": 128
+      },
+      {
+        "block": "utilitybaseores:melon_ore",
+        "size": 6,
+        "variation": 4,
+        "frequency": 4,
+        "min_height": 32,
+        "max_height": 128
+      },
+      {
+        "block": "utilitybaseores:potato_ore",
+        "size": 6,
+        "variation": 4,
+        "frequency": 4,
+        "min_height": 32,
+        "max_height": 128
+      },
+      {
+        "block": "utilitybaseores:chicken_ore",
+        "size": 6,
+        "variation": 4,
+        "frequency": 4,
+        "min_height": 32,
+        "max_height": 128
+      },
+      {
+        "block": "utilitybaseores:beef_ore",
+        "size": 6,
+        "variation": 4,
+        "frequency": 4,
+        "min_height": 32,
+        "max_height": 128
+      },
+      {
+        "block": "utilitybaseores:porkchop_ore",
+        "size": 6,
+        "variation": 4,
+        "frequency": 4,
+        "min_height": 32,
+        "max_height": 128
+      },
+      {
+        "block": "utilitybaseores:fish_ore",
+        "size": 6,
+        "variation": 4,
+        "frequency": 4,
+        "min_height": 32,
+        "max_height": 128
+      }
+    ]
+  }
+]

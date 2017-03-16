@@ -26,7 +26,22 @@ public class CommonProxy {
         Recipes.initRecipes();
 		GameRegistry.registerWorldGenerator(new WorldGen(), 0);
 
-		if (Loader.isModLoaded("basemetals")){Blocks.initBMe(); Items.initBMe(); Recipes.initBMe();
+		if (Loader.isModLoaded("basemetals")){
+			Blocks.initBMe(); 
+		    Items.initBMe(); 
+		    Recipes.initBMe();
+		}
+
+		if (Loader.isModLoaded("modernmetals")){
+			Blocks.initMMe(); 
+		    Items.initMMe(); 
+		    //Recipes.initMMe();
+		}
+		
+		if (Loader.isModLoaded("utilitybaseores")){
+			Blocks.initUBO(); 
+		    Items.initUBO(); 
+		    //Recipes.initBMe();
 		}
     }
 		

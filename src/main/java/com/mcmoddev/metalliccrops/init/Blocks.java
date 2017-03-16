@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class Blocks {
 	
-	// Vanilla and Metallic Crops blocks
+	// Vanilla and Metallic Crops blocks (10 Blocks)
 	public static Block metallicFarmland;
 	public static Block metallicOre;
 	public static BlockMetalCrop metallicCrop;
@@ -24,7 +24,7 @@ public class Blocks {
 	public static BlockMetalCrop redstoneCrop;
 	public static BlockMetalCrop emeraldCrop;
 	
-	// Utility Base Ores Compat
+	// Utility Base Ores Compat (18 Blocks)
 	public static BlockMetalCrop featherCrop;
 	public static BlockMetalCrop boneCrop;
 	public static BlockMetalCrop rottenCrop;
@@ -43,7 +43,8 @@ public class Blocks {
 	public static BlockMetalCrop beefCrop;
 	public static BlockMetalCrop porkchopCrop;
 	public static BlockMetalCrop fishCrop;
-    //BMe compat
+	
+    //BMe compat  (12 Blocks)
 	public static BlockMetalCrop adamantineCrop;
 	public static BlockMetalCrop antimonyCrop;
 	public static BlockMetalCrop aquariumCrop;
@@ -57,8 +58,22 @@ public class Blocks {
 	public static BlockMetalCrop tinCrop;
 	public static BlockMetalCrop zincCrop;
 
+	//MMe Compat  (13 Blocks)
+	public static BlockMetalCrop aluminumCrop;
+	public static BlockMetalCrop cadmiumCrop;
+	public static BlockMetalCrop chromiumCrop;
+	public static BlockMetalCrop iridiumCrop;
+	public static BlockMetalCrop magnesiumCrop;
+	public static BlockMetalCrop manganeseCrop;
+	public static BlockMetalCrop osmiumCrop;
+	public static BlockMetalCrop plutoniumCrop;
+	public static BlockMetalCrop rutileCrop;
+	public static BlockMetalCrop tantalumCrop;
+	public static BlockMetalCrop tungstenCrop;
+	public static BlockMetalCrop uraniumCrop;
+	public static BlockMetalCrop zirconiumCrop;
+
 	public static void initBlocks() {
-		
 	    GameRegistry.registerBlock(metallicFarmland = new BlockMetalicBase("metallic_farmland").setLightLevel(1.0f), "metallic_farmland");
 	    GameRegistry.registerBlock(metallicOre = new BlockMetalicBase("metallic_ore").setLightLevel(1.0f), "metallic_ore");
 	    metallicCrop = new BlockMetalCrop("metallic_crop", "metallic_smallpowder", "metallic_seeds");
@@ -68,8 +83,7 @@ public class Blocks {
 	    lapisCrop = new BlockMetalCrop("lapis_crop", "lapis_smallpowder", "lapis_seeds");
 	    diamondCrop = new BlockMetalCrop("diamond_crop", "diamond_smallpowder", "diamon_seeds");
 	    redstoneCrop = new BlockMetalCrop("redstone_crop", "redstone_smallpowder", "redstone_seeds");
-	    emeraldCrop = new BlockMetalCrop("emerald_crop", "emerald_smallpowder", "emerald_seeds");
-	}
+	    emeraldCrop = new BlockMetalCrop("emerald_crop", "emerald_smallpowder", "emerald_seeds");}
 	
 	@Optional.Method(modid="basemetals")
 	public static void initBMe() {
@@ -84,8 +98,24 @@ public class Blocks {
 		mercuryCrop = new BlockMetalCrop("mercury_crop", "mercury_smallpowder", "mercury_seeds");
 		starsteelCrop = new BlockMetalCrop("starsteel_crop", "starsteel_smallpowder", "starsteel_seeds");
 		tinCrop = new BlockMetalCrop("tin_crop", "tin_smallpowder", "tin_seeds");
-		zincCrop = new BlockMetalCrop("zinc_crop", "zinc_smallpowder", "zinc_seeds");
-		}
+		zincCrop = new BlockMetalCrop("zinc_crop", "zinc_smallpowder", "zinc_seeds");}
+	
+	@Optional.Method(modid="modernmetals")
+	public static void initMMe() {
+		aluminumCrop = new BlockMetalCrop("aluminum_crop", "aluminum_smallpowder", "aluminum_seeds");
+		cadmiumCrop = new BlockMetalCrop("cadmium_crop", "cadmium_smallpowder", "cadmium_seeds");
+		chromiumCrop = new BlockMetalCrop("chromium_crop", "chromium_smallpowder", "chromium_seeds");
+		iridiumCrop = new BlockMetalCrop("iridium_crop", "iridium_smallpowder", "iridium_seeds");
+		magnesiumCrop = new BlockMetalCrop("magnesium_crop", "magnesium_smallpowder", "magnesium_seeds");
+		manganeseCrop = new BlockMetalCrop("manganese_crop", "manganese_smallpowder", "manganese_seeds");
+		osmiumCrop = new BlockMetalCrop("osmium_crop", "osmium_smallpowder", "osmium_seeds");
+		plutoniumCrop = new BlockMetalCrop("plutonium_crop", "plutonium_smallpowder", "plutonium_seeds");
+		rutileCrop = new BlockMetalCrop("rutile_crop", "rutile_smallpowder", "rutile_seeds");
+		tantalumCrop = new BlockMetalCrop("tantalum_crop", "tantalum_smallpowder", "tantalum_seeds");
+		tungstenCrop = new BlockMetalCrop("tungsten_crop", "tungsten_smallpowder", "tungsten_seeds");
+		uraniumCrop = new BlockMetalCrop("uranium_crop", "uranium_smallpowder", "uranium_seeds");
+		zirconiumCrop = new BlockMetalCrop("zirconium_crop", "zirconium_smallpowder", "zirconium_seeds");}
+	
 	@Optional.Method(modid="utilitybaseores")
 	public static void initUBO() {
 		featherCrop = new BlockMetalCrop("feather_crop", "feather_smallpowder", "feather_seeds");
@@ -105,8 +135,7 @@ public class Blocks {
 		chickenCrop = new BlockMetalCrop("chicken_crop", "chicken_smallpowder", "chicken_seeds");
 		beefCrop = new BlockMetalCrop("beef_crop", "beef_smallpowder", "beef_seeds");
 		porkchopCrop = new BlockMetalCrop("porkchop_crop", "porkchop_smallpowder", "porkchop_seeds");
-		fishCrop = new BlockMetalCrop("fish_crop", "fish_smallpowder", "fish_seeds");
-		}
+		fishCrop = new BlockMetalCrop("fish_crop", "fish_smallpowder", "fish_seeds");}
 
 	@SideOnly(Side.CLIENT)
 	public static void initModels(){
@@ -117,12 +146,11 @@ public class Blocks {
 		lapisCrop.initModel();
 		diamondCrop.initModel();
 		redstoneCrop.initModel();
-		emeraldCrop.initModel();
-		}	
+		emeraldCrop.initModel();}	
+	
 	@SideOnly(Side.CLIENT)
 	public static void initModelsBMe(){
-		if (Loader.isModLoaded("basemetals"))
-		{
+		if (Loader.isModLoaded("basemetals")){
 		//antimonyCrop.initModel();
 		adamantineCrop.initModel();
 		aquariumCrop.initModel();
@@ -134,15 +162,28 @@ public class Blocks {
 		mercuryCrop.initModel();
 		starsteelCrop.initModel();
 		tinCrop.initModel();
-		zincCrop.initModel();
-
-		}
-		
-		}
+		zincCrop.initModel();}}
+	
+	@SideOnly(Side.CLIENT)
+	public static void initModelsMMe(){
+		if (Loader.isModLoaded("modernmetals")){
+		aluminumCrop.initModel();
+		cadmiumCrop.initModel();
+		chromiumCrop.initModel();
+		iridiumCrop.initModel();
+		magnesiumCrop.initModel();
+		manganeseCrop.initModel();
+		osmiumCrop.initModel();
+		plutoniumCrop.initModel();
+		rutileCrop.initModel();
+		tantalumCrop.initModel();
+		tungstenCrop.initModel();
+		uraniumCrop.initModel();
+		zirconiumCrop.initModel();}}
+	
 	@SideOnly(Side.CLIENT)
 	public static void initModelsUBO(){
-		if (Loader.isModLoaded("utilitybaseores"))
-		{
+		if (Loader.isModLoaded("utilitybaseores")){
 			featherCrop.initModel();
 			boneCrop.initModel();
 			rottenCrop.initModel();
@@ -160,9 +201,6 @@ public class Blocks {
 			chickenCrop.initModel();
 			beefCrop.initModel();
 			porkchopCrop.initModel();
-			fishCrop.initModel();
-
-		}
-        }
+			fishCrop.initModel();}}
 
 }
