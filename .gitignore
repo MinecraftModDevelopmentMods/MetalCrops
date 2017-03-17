@@ -22,3 +22,8 @@ eclipse
 run
 
 libs/OreSpawn-1.10.2-2.0.0.15.jar
+libs/ModernMetals-0.11.0-sources.jar
+libs/ModernMetals-0.11.0.jar
+src/main/resources/assets/metalliccrops/textures/blocks/metallic_crop.rar
+libs/BaseMetals_1.10.2-2.4.0.11.jar
+libs/BaseMetals-src.zip
