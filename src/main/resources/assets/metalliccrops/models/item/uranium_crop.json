@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "metalliccrops:blocks/adamantine_crop/7"
+    "layer0": "metalliccrops:blocks/uranium_crop/7"
   }
 }

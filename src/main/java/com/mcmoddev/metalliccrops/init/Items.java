@@ -108,6 +108,7 @@ public class Items {
 
 	// Utility Base Ores Seeds
 	public static Item featherSeeds;
+	public static Item blazeSeeds;
 	public static Item boneSeeds;
 	public static Item rottenSeeds;
 	public static Item gunpowderSeeds;
@@ -124,6 +125,7 @@ public class Items {
 	public static Item fishSeeds;
 
 	// Utility Base Ores Small Powder
+	public static Item blazeSmallPowder;
 	public static Item featherSmallPowder;
 	public static Item boneSmallPowder;
 	public static Item rottenSmallPowder;
@@ -242,6 +244,8 @@ public class Items {
 	public static void initUBO() {
 		
 		// Utility Base Ores Small Powder
+		blazeSmallPowder = registerItems("blaze_smallpowder");
+
 		featherSmallPowder = registerItems("feather_smallpowder");
 		boneSmallPowder = registerItems("bone_smallpowder");
 		rottenSmallPowder = registerItems("rotten_smallpowder");
@@ -259,6 +263,8 @@ public class Items {
 		fishSmallPowder = registerItems("fish_smallpowder");
 
 		// utility Base Ores Seeds
+		blazeSeeds = registerSeeds("blaze_seeds", Blocks.blazeCrop, Blocks.metallicFarmland);
+
 		featherSeeds = registerSeeds("feather_seeds", Blocks.featherCrop, Blocks.metallicFarmland);
 		boneSeeds = registerSeeds("bone_seeds", Blocks.boneCrop, Blocks.metallicFarmland);
 		rottenSeeds = registerSeeds("rotten_seeds", Blocks.rottenCrop, Blocks.metallicFarmland);

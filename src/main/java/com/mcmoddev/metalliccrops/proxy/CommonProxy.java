@@ -41,7 +41,7 @@ public class CommonProxy {
 		if (Loader.isModLoaded("utilitybaseores")){
 			Blocks.initUBO(); 
 		    Items.initUBO(); 
-		    //Recipes.initBMe();
+		    Recipes.initBMe();
 		}
     }
 		
