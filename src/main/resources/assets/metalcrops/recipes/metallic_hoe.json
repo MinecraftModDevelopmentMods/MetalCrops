@@ -1,0 +1,22 @@
+{
+  "result": {
+    "item": "metalcrops:metallic_hoe",
+	  "data":0
+  },
+  "pattern": [
+    "PP ",
+    " O ",
+    " O "
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "metalcrops:metallic_ingot",
+	  "data":0
+    },   
+	"O": {
+      "item": "metalcrops:metallic_rod",
+	  "data":0
+    }
+  }
+}

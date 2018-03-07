@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "minecraft:redstone"
+  },
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "metalcrops:redstone_smallpowder",
+	  "data":0
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "minecraft:gold_ingot"
+  },
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "metalcrops:gold_smallpowder",
+	  "data":0
+    }
+  }
+}

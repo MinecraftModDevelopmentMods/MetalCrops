@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "minecraft:emerald"
+  },
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "metalcrops:emerald_smallpowder",
+	  "data":0
+    }
+  }
+}

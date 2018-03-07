@@ -1,0 +1,22 @@
+{
+  "result": {
+    "item": "metalcrops:lapis_seeds",
+	  "data":0
+  },
+  "pattern": [
+    "POP",
+    "OPO",
+    "POP"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "metalcrops:metallic_seeds",
+	  "data":0
+    },
+	"O": {
+      "item": "minecraft:dye",
+	  "data":4
+    }
+  }
+}

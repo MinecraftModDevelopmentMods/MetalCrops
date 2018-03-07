@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "metalcrops:blocks/vanilla_charcoal_crop/7"
+  }
+}

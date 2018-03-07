@@ -1,7 +1,0 @@
-{
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "metalliccrops:blocks/metallic_ore",
-        "side": "metalliccrops:blocks/metallic_ore"
-    }
-}

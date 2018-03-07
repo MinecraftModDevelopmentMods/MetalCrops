@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "minecraft:coal",
+	  "data":0
+  },
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "metalcrops:coal_smallpowder",
+	  "data":0
+    }
+  }
+}

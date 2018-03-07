@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "metalcrops:metallic_ingot",
+	  "data":0
+  },
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "metalcrops:metallic_smallpowder",
+	  "data":0
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "minecraft:diamond"
+  },
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "metalcrops:diamond_smallpowder",
+	  "data":0
+    }
+  }
+}
