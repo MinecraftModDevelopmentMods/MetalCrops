@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "basemetals:tin_ingot"
+  },
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "metalcrops:tin_smallpowder",
+	  "data":0
+    }
+  }
+}

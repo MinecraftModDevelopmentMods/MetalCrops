@@ -41,9 +41,38 @@ public class Items {
 	public static ItemMetalicBase metallicSmallPowder = (ItemMetalicBase) new ItemMetalicBase ("metallic_smallpowder").setCreativeTab(CreativeTabs.MATERIALS);
 	public static ItemMetalicBase metallicRod = (ItemMetalicBase) new ItemMetalicBase ("metallic_rod").setCreativeTab(CreativeTabs.MATERIALS);
 
+	
+	public static ItemModMetalSeeds adamantineSeeds = (ItemModMetalSeeds) new ItemModMetalSeeds (Blocks.adamantineCrop, "adamantine_seeds", Blocks.metallicFarmland).setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemModMetalSeeds antimonySeeds = (ItemModMetalSeeds) new ItemModMetalSeeds (Blocks.antimonyCrop, "antimony_seeds", Blocks.metallicFarmland).setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemModMetalSeeds aquariumSeeds = (ItemModMetalSeeds) new ItemModMetalSeeds (Blocks.aquariumCrop, "aquarium_seeds", Blocks.metallicFarmland).setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemModMetalSeeds bismuthSeeds = (ItemModMetalSeeds) new ItemModMetalSeeds (Blocks.bismuthCrop, "bismuth_seeds", Blocks.metallicFarmland).setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemModMetalSeeds copperSeeds = (ItemModMetalSeeds) new ItemModMetalSeeds (Blocks.copperCrop, "copper_seeds", Blocks.metallicFarmland).setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemModMetalSeeds coldironSeeds = (ItemModMetalSeeds) new ItemModMetalSeeds (Blocks.coldironCrop, "coldiron_seeds", Blocks.metallicFarmland).setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemModMetalSeeds leadSeeds = (ItemModMetalSeeds) new ItemModMetalSeeds (Blocks.leadCrop, "lead_seeds", Blocks.metallicFarmland).setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemModMetalSeeds nickelSeeds = (ItemModMetalSeeds) new ItemModMetalSeeds (Blocks.nickelCrop, "nickel_seeds", Blocks.metallicFarmland).setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemModMetalSeeds mercurySeeds = (ItemModMetalSeeds) new ItemModMetalSeeds (Blocks.mercuryCrop, "mercury_seeds", Blocks.metallicFarmland).setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemModMetalSeeds starsteelSeeds = (ItemModMetalSeeds) new ItemModMetalSeeds (Blocks.starsteelCrop, "starsteel_seeds", Blocks.metallicFarmland).setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemModMetalSeeds tinSeeds = (ItemModMetalSeeds) new ItemModMetalSeeds (Blocks.tinCrop, "tin_seeds", Blocks.metallicFarmland).setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemModMetalSeeds zincSeeds = (ItemModMetalSeeds) new ItemModMetalSeeds (Blocks.zincCrop, "zinc_seeds", Blocks.metallicFarmland).setCreativeTab(CreativeTabs.MATERIALS);
+
+	public static ItemMetalicBase adamantineSmallPowder = (ItemMetalicBase) new ItemMetalicBase ("adamantine_smallpowder").setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemMetalicBase antimonySmallPowder = (ItemMetalicBase) new ItemMetalicBase ("antimony_smallpowder").setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemMetalicBase aquariumSmallPowder = (ItemMetalicBase) new ItemMetalicBase ("aquarium_smallpowder").setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemMetalicBase bismuthSmallPowder = (ItemMetalicBase) new ItemMetalicBase ("bismuth_smallpowder").setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemMetalicBase copperSmallPowder = (ItemMetalicBase) new ItemMetalicBase ("copper_smallpowder").setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemMetalicBase coldironSmallPowder = (ItemMetalicBase) new ItemMetalicBase ("coldiron_smallpowder").setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemMetalicBase leadSmallPowder = (ItemMetalicBase) new ItemMetalicBase ("lead_smallpowder").setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemMetalicBase nickelSmallPowder = (ItemMetalicBase) new ItemMetalicBase ("nickel_smallpowder").setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemMetalicBase mercurySmallPowder = (ItemMetalicBase) new ItemMetalicBase ("mercury_smallpowder").setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemMetalicBase starsteelSmallPowder = (ItemMetalicBase) new ItemMetalicBase ("starsteel_smallpowder").setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemMetalicBase tinSmallPowder = (ItemMetalicBase) new ItemMetalicBase ("tin_smallpowder").setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemMetalicBase zincSmallPowder = (ItemMetalicBase) new ItemMetalicBase ("zinc_smallpowder").setCreativeTab(CreativeTabs.MATERIALS);
+
+	
+	
+	
+	
 	public static void register(IForgeRegistry<Item> registry) {
-		
-		
 		registry.registerAll(
 				metallicRod,
 				metallicSmallPowder,
@@ -55,6 +84,31 @@ public class Items {
 				diamondSmallPowder,
 				redstoneSmallPowder,
 				emeraldSmallPowder,
+				
+				//BMe
+				adamantineSmallPowder,
+				aquariumSmallPowder,
+				copperSmallPowder,
+				coldironSmallPowder,
+				leadSmallPowder,
+				nickelSmallPowder,
+				mercurySmallPowder,
+				starsteelSmallPowder,
+				tinSmallPowder,
+				zincSmallPowder,
+				
+				//BMe
+				adamantineSeeds,
+				aquariumSeeds,
+				copperSeeds,
+				coldironSeeds,
+				leadSeeds,
+				nickelSeeds,
+				mercurySeeds,
+				starsteelSeeds,
+				tinSeeds,
+				zincSeeds,
+				
 				/*
 				goldPowder,
 				ironPowder,
@@ -76,6 +130,36 @@ public class Items {
 	
 		);
 	}
+	public static void registerBMe(IForgeRegistry<Item> registry) {
+		registry.registerAll(
+				//BMe
+				adamantineSmallPowder,
+				aquariumSmallPowder,
+				copperSmallPowder,
+				coldironSmallPowder,
+				leadSmallPowder,
+				nickelSmallPowder,
+				mercurySmallPowder,
+				starsteelSmallPowder,
+				tinSmallPowder,
+				zincSmallPowder,
+				
+				//BMe
+				adamantineSeeds,
+				aquariumSeeds,
+				copperSeeds,
+				coldironSeeds,
+				leadSeeds,
+				nickelSeeds,
+				mercurySeeds,
+				starsteelSeeds,
+				tinSeeds,
+				zincSeeds
+
+	
+		);
+	}
+	
 	
 	public static void registerModels() {
 		        metallicRod.registerItemModel();
@@ -104,10 +188,57 @@ public class Items {
 		        diamondSeeds.registerItemModel();
 		        redstoneSeeds.registerItemModel();
 		        emeraldSeeds.registerItemModel();
-
 	            metallicHoe.registerItemModel();
 	            metallicSeed.registerItemModel();
+	            
+				adamantineSmallPowder.registerItemModel();
+				aquariumSmallPowder.registerItemModel();
+				copperSmallPowder.registerItemModel();
+				coldironSmallPowder.registerItemModel();
+				leadSmallPowder.registerItemModel();
+				nickelSmallPowder.registerItemModel();
+				mercurySmallPowder.registerItemModel();
+				starsteelSmallPowder.registerItemModel();
+				tinSmallPowder.registerItemModel();
+				zincSmallPowder.registerItemModel();
+				
+				//BMe
+				adamantineSeeds.registerItemModel();
+				aquariumSeeds.registerItemModel();
+				copperSeeds.registerItemModel();
+				coldironSeeds.registerItemModel();
+				leadSeeds.registerItemModel();
+				nickelSeeds.registerItemModel();
+				mercurySeeds.registerItemModel();
+				starsteelSeeds.registerItemModel();
+				tinSeeds.registerItemModel();
+				zincSeeds.registerItemModel();
 
 	}
+	public static void registerBMeModels() {
+		adamantineSmallPowder.registerItemModel();
+		aquariumSmallPowder.registerItemModel();
+		copperSmallPowder.registerItemModel();
+		coldironSmallPowder.registerItemModel();
+		leadSmallPowder.registerItemModel();
+		nickelSmallPowder.registerItemModel();
+		mercurySmallPowder.registerItemModel();
+		starsteelSmallPowder.registerItemModel();
+		tinSmallPowder.registerItemModel();
+		zincSmallPowder.registerItemModel();
+		
+		//BMe
+		adamantineSeeds.registerItemModel();
+		aquariumSeeds.registerItemModel();
+		copperSeeds.registerItemModel();
+		coldironSeeds.registerItemModel();
+		leadSeeds.registerItemModel();
+		nickelSeeds.registerItemModel();
+		mercurySeeds.registerItemModel();
+		starsteelSeeds.registerItemModel();
+		tinSeeds.registerItemModel();
+		zincSeeds.registerItemModel();
+
+}
 
 }

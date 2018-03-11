@@ -1,13 +1,14 @@
 {
   "result": {
-    "item": "minecraft:iron_ingot"
+	"type": "forge:ore_dict",
+	"ore": "ingotIron"
   },
   "pattern": [
     "PPP",
     "PPP",
     "PPP"
   ],
-  "type": "minecraft:crafting_shaped",
+  "type": "forge:ore_shaped",
   "key": {
     "P": {
       "item": "metalcrops:iron_smallpowder",

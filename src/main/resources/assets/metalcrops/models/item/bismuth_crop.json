@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "metalliccrops:blocks/bismuth_crop/7"
+    "layer0": "metalcrops:blocks/bismuth_crop/7"
   }
 }

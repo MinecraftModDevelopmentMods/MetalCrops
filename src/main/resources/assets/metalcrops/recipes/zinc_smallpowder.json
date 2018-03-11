@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "basemetals:zinc_ingot"
+  },
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "metalcrops:zinc_smallpowder",
+	  "data":0
+    }
+  }
+}

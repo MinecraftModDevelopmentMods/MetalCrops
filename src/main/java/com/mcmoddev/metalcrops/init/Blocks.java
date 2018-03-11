@@ -25,10 +25,26 @@ public class Blocks {
 	public static BlockMetalicBase metallicFarmland = (BlockMetalicBase) new BlockMetalicBase(Material.GRASS, "metallic_farmland").setCreativeTab(CreativeTabs.MATERIALS);
 	public static BlockOre metallicOre = (BlockOre) new BlockOre("metallic_ore").setCreativeTab(CreativeTabs.MATERIALS);
 
+	public static BlockMetalCrop copperCrop = (BlockMetalCrop) new BlockMetalCrop("copper_crop","copper_smallpowder", "copper_seeds").setCreativeTab(CreativeTabs.MATERIALS);
+	public static BlockMetalCrop antimonyCrop = (BlockMetalCrop) new BlockMetalCrop("antimony_crop","antimony_powder", "antimony_seeds").setCreativeTab(CreativeTabs.MATERIALS);
+	public static BlockMetalCrop adamantineCrop = (BlockMetalCrop) new BlockMetalCrop("adamantine_crop","adamantine_smallpowder", "antimony_seeds").setCreativeTab(CreativeTabs.MATERIALS);
+	public static BlockMetalCrop aquariumCrop = (BlockMetalCrop) new BlockMetalCrop("aquarium_crop","aquarium_smallpowder", "aquarium_seeds").setCreativeTab(CreativeTabs.MATERIALS);
+	public static BlockMetalCrop bismuthCrop = (BlockMetalCrop) new BlockMetalCrop("bismuth_crop","bismuth_powder", "bismuth_seeds").setCreativeTab(CreativeTabs.MATERIALS);
+	public static BlockMetalCrop coldironCrop = (BlockMetalCrop) new BlockMetalCrop("coldiron_crop","coldiron_smallpowder", "coldiron_seeds").setCreativeTab(CreativeTabs.MATERIALS);
+	public static BlockMetalCrop leadCrop = (BlockMetalCrop) new BlockMetalCrop("lead_crop","lead_smallpowder", "lead_seeds").setCreativeTab(CreativeTabs.MATERIALS);
+	public static BlockMetalCrop nickelCrop = (BlockMetalCrop) new BlockMetalCrop("nickel_crop","nickel_smallpowder", "nickel_seeds").setCreativeTab(CreativeTabs.MATERIALS);
+	public static BlockMetalCrop mercuryCrop = (BlockMetalCrop) new BlockMetalCrop("mercury_crop","mercury_smallpowder", "mercury_seeds").setCreativeTab(CreativeTabs.MATERIALS);
+	public static BlockMetalCrop starsteelCrop = (BlockMetalCrop) new BlockMetalCrop("starsteel_crop","starsteel_smallpowder", "starsteel_seeds").setCreativeTab(CreativeTabs.MATERIALS);
+	public static BlockMetalCrop tinCrop = (BlockMetalCrop) new BlockMetalCrop("tin_crop","tin_smallpowder", "tin_seeds").setCreativeTab(CreativeTabs.MATERIALS);
+	public static BlockMetalCrop zincCrop = (BlockMetalCrop) new BlockMetalCrop("zinc_crop","zinc_smallpowder", "zinc_seeds").setCreativeTab(CreativeTabs.MATERIALS);
+
+	
+
 	public static void register(IForgeRegistry<Block> registry) {
 		registry.registerAll(
 				
 				//Vanilla
+				
 				ironCrop,
 				goldCrop,
 				coalCrop,
@@ -40,7 +56,20 @@ public class Blocks {
 				//Other
 				metallicCrop,
 				metallicFarmland,
-				metallicOre
+				metallicOre,
+				
+				copperCrop,
+				antimonyCrop,
+				adamantineCrop,
+				aquariumCrop,
+				bismuthCrop ,
+				coldironCrop,
+				leadCrop,
+				nickelCrop,
+				mercuryCrop,
+				starsteelCrop,
+				tinCrop,
+				zincCrop
 		);
 	}
 
@@ -59,8 +88,22 @@ public class Blocks {
 				//Other
 				metallicCrop.createItemBlock(),
 			    metallicFarmland.createItemBlock(),
-				metallicOre.createItemBlock()
+				metallicOre.createItemBlock(),
+				//BMe
+				copperCrop.createItemBlock(),
+				antimonyCrop.createItemBlock(),
+				adamantineCrop.createItemBlock(),
+				aquariumCrop.createItemBlock(),
+				bismuthCrop .createItemBlock(),
+				coldironCrop.createItemBlock(),
+				leadCrop.createItemBlock(),
+				nickelCrop.createItemBlock(),
+				mercuryCrop.createItemBlock(),
+				starsteelCrop.createItemBlock(),
+				tinCrop.createItemBlock(),
+				zincCrop.createItemBlock()
 		);
+		
 	}
 
 	public static void registerItemModels() {
@@ -73,12 +116,25 @@ public class Blocks {
 		diamondCrop.registerItemModel(Item.getItemFromBlock(diamondCrop));
 		redstoneCrop.registerItemModel(Item.getItemFromBlock(redstoneCrop));
 		emeraldCrop.registerItemModel(Item.getItemFromBlock(emeraldCrop));
-		
+
 		//Other
 		metallicCrop.registerItemModel(Item.getItemFromBlock(metallicCrop));
 	    metallicFarmland.registerItemModel(Item.getItemFromBlock(metallicFarmland));
 	    metallicOre.registerItemModel(Item.getItemFromBlock(metallicOre));
+		copperCrop.registerItemModel(Item.getItemFromBlock(copperCrop));
+		antimonyCrop.registerItemModel(Item.getItemFromBlock(antimonyCrop));
+		adamantineCrop.registerItemModel(Item.getItemFromBlock(adamantineCrop));
+		aquariumCrop.registerItemModel(Item.getItemFromBlock(aquariumCrop));
+		bismuthCrop.registerItemModel(Item.getItemFromBlock(bismuthCrop));
+		coldironCrop.registerItemModel(Item.getItemFromBlock(coldironCrop));
+		leadCrop.registerItemModel(Item.getItemFromBlock(leadCrop));
+		nickelCrop.registerItemModel(Item.getItemFromBlock(nickelCrop));
+		mercuryCrop.registerItemModel(Item.getItemFromBlock(mercuryCrop));
+		starsteelCrop.registerItemModel(Item.getItemFromBlock(starsteelCrop));
+		tinCrop.registerItemModel(Item.getItemFromBlock(tinCrop));
+		zincCrop.registerItemModel(Item.getItemFromBlock(zincCrop));
 
 	}
+
 
 }

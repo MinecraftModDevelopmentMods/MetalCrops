@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "basemetals:starsteel_ingot"
+  },
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "metalcrops:starsteel_smallpowder",
+	  "data":0
+    }
+  }
+}

@@ -7,42 +7,42 @@
 		"age": {
 			"0": {
 				"textures": {
-					"cross": "metalliccrops:blocks/mercury_crop/0"
+					"cross": "metalcrops:blocks/mercury_crop/0"
 				}
 			},
 			"1": {
 				"textures": {
-					"cross": "metalliccrops:blocks/mercury_crop/1"
+					"cross": "metalcrops:blocks/mercury_crop/1"
 				}
 			},
 			"2": {
 				"textures": {
-					"cross": "metalliccrops:blocks/mercury_crop/2"
+					"cross": "metalcrops:blocks/mercury_crop/2"
 				}
 			},
 			"3": {
 				"textures": {
-					"cross": "metalliccrops:blocks/mercury_crop/3"
+					"cross": "metalcrops:blocks/mercury_crop/3"
 				}
 			},
 			"4": {
 				"textures": {
-					"cross": "metalliccrops:blocks/mercury_crop/4"
+					"cross": "metalcrops:blocks/mercury_crop/4"
 				}
 			},
 			"5": {
 				"textures": {
-					"cross": "metalliccrops:blocks/mercury_crop/5"
+					"cross": "metalcrops:blocks/mercury_crop/5"
 				}
 			},
 			"6": {
 				"textures": {
-					"cross": "metalliccrops:blocks/mercury_crop/6"
+					"cross": "metalcrops:blocks/mercury_crop/6"
 				}
 			},
 			"7": {
 				"textures": {
-					"cross": "metalliccrops:blocks/mercury_crop/7"
+					"cross": "metalcrops:blocks/mercury_crop/7"
 				}
 			}
 		}

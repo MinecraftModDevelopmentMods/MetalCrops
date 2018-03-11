@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "metalliccrops:items/coldiron_seeds"
+    "layer0": "metalcrops:items/coldiron_seeds"
   }
 }

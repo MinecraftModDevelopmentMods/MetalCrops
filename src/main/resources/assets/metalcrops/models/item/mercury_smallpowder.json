@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "metalliccrops:items/mercury_smallpowder"
+    "layer0": "metalcrops:items/mercury_smallpowder"
   }
 }

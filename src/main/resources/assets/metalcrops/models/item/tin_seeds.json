@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "metalliccrops:items/tin_seeds"
+    "layer0": "metalcrops:items/tin_seeds"
   }
 }

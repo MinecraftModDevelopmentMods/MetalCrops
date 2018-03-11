@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "basemetals:aquarium_ingot"
+  },
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "metalcrops:aquarium_smallpowder",
+	  "data":0
+    }
+  }
+}
