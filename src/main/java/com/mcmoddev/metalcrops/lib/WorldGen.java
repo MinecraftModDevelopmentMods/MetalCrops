@@ -15,7 +15,7 @@ public class WorldGen implements IWorldGenerator {
 
 	private WorldGenerator gen_metallic_ore;
 	public WorldGen() {
-		this.gen_metallic_ore = new WorldGenMinable(Blocks.metallicOre.getDefaultState(), 10);
+		this.gen_metallic_ore = new WorldGenMinable(Blocks.metallicOre.getDefaultState(), 5);
 	}
 
 	private void runGenerator(WorldGenerator generator, World world, Random rand, int chunk_X, int chunk_Z, int chancesToSpawn, int minHeight, int maxHeight) {

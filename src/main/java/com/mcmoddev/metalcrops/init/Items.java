@@ -96,7 +96,8 @@ public class Items {
 				starsteelSmallPowder,
 				tinSmallPowder,
 				zincSmallPowder,
-				
+				antimonySmallPowder,
+				bismuthSmallPowder,
 				//BMe
 				adamantineSeeds,
 				aquariumSeeds,
@@ -108,6 +109,8 @@ public class Items {
 				starsteelSeeds,
 				tinSeeds,
 				zincSeeds,
+				antimonySeeds,
+				bismuthSeeds,
 				
 				/*
 				goldPowder,
@@ -143,6 +146,7 @@ public class Items {
 				starsteelSmallPowder,
 				tinSmallPowder,
 				zincSmallPowder,
+				
 				
 				//BMe
 				adamantineSeeds,
@@ -191,6 +195,7 @@ public class Items {
 	            metallicHoe.registerItemModel();
 	            metallicSeed.registerItemModel();
 	            
+				antimonySmallPowder.registerItemModel();
 				adamantineSmallPowder.registerItemModel();
 				aquariumSmallPowder.registerItemModel();
 				copperSmallPowder.registerItemModel();
@@ -201,8 +206,10 @@ public class Items {
 				starsteelSmallPowder.registerItemModel();
 				tinSmallPowder.registerItemModel();
 				zincSmallPowder.registerItemModel();
+				bismuthSmallPowder.registerItemModel();
 				
 				//BMe
+				antimonySeeds.registerItemModel();
 				adamantineSeeds.registerItemModel();
 				aquariumSeeds.registerItemModel();
 				copperSeeds.registerItemModel();
@@ -213,6 +220,7 @@ public class Items {
 				starsteelSeeds.registerItemModel();
 				tinSeeds.registerItemModel();
 				zincSeeds.registerItemModel();
+				bismuthSeeds.registerItemModel();
 
 	}
 	public static void registerBMeModels() {

@@ -15,8 +15,8 @@
 	  "data":0
     },
 	"O": {
-      "item": "basemetals:tin_ingot",
-	  "data":0
+    "type": "forge:ore_dict",
+			"ore": "ingotTin"
     }
   }
 }

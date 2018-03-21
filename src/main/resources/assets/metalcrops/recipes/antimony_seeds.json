@@ -15,8 +15,9 @@
 	  "data":0
     },
 	"O": {
-      "item": "basemetals:antimony_ingot",
-	  "data":0
+    "type": "forge:ore_dict",
+			"ore": "ingotAntimony"
     }
+
   }
 }
